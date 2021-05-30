@@ -1,0 +1,95 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+<br />
+
+<div class="row">
+    <div class="col-lg-3 col-6">
+        <!-- small card -->
+        <div class="small-box bg-info">
+            <div class="inner">
+                <h3>@ViewBag.getCategoryCount</h3>
+
+                <p>Toplam kategori sayısı</p>
+            </div>
+            <div class="icon">
+                <i class="fas fa-chart-bar"></i>
+            </div>
+            @*<a href="" class="small-box-footer">
+            More info <i class="fas fa-arrow-circle-right"></i>
+        </a>*@
+            <br />
+        </div>
+    </div>
+    <!-- ./col -->
+    <div class="col-lg-3 col-6">
+        <!-- small card -->
+        <div class="small-box bg-success">
+            <div class="inner">
+                <h3>@ViewBag.getbasliktakiKategori</h3>
+
+                <p>Başlık tablosunda "yazılım" <br />kategorisine ait başlık sayısı</p>
+            </div>
+            <div class="icon">
+                <i class="fas fa-chart-line"></i>
+            </div>
+            @*<a href="#" class="small-box-footer">
+                    More info <i class="fas fa-arrow-circle-right"></i>
+                </a>*@
+        </div>
+    </div>
+    <!-- ./col -->
+    <div class="col-lg-3 col-6">
+        <!-- small card -->
+        <div class="small-box bg-warning">
+            <div class="inner">
+                <h3 style="color:white">@ViewBag.getContainsa</h3>
+
+                <p style="color:white">Yazar adında 'a' harfi geçen <br /> yazar sayısı</p>
+            </div>
+            <div class="icon">
+                <i class="fas fa-user-plus"></i>
+            </div>
+            @*<a href="#" class="small-box-footer">
+                    More info <i class="fas fa-arrow-circle-right"></i>
+                </a>*@
+        </div>
+    </div>
+    <!-- ./col -->
+    <div class="col-lg-3 col-6">
+        <!-- small card -->
+        <div class="small-box bg-danger">
+            <div class="inner">
+                <h3>@ViewBag.getcategoryadi</h3>
+
+                <p>En fazla başlığa sahip kategori <br /> adı</p>
+            </div>
+            <div class="icon">
+                <i class="fas fa-chart-pie"></i>
+            </div>
+            @*<a href="#" class="small-box-footer">
+                    More info <i class="fas fa-arrow-circle-right"></i>
+                </a>*@
+        </div>
+    </div>
+    <!-- ./col -->
+    <div class="col-lg-3 col-6">
+        <!-- small card -->
+        <div class="small-box bg-fuchsia">
+            <div class="inner">
+                <h3>@ViewBag.fark</h3>
+
+                <p>Kategori tablosunda durumu <br /> true olan kategoriler ile false olan kategoriler arasındaki sayısal fark</p>
+            </div>
+            <div class="icon">
+                <i class="fas fa-chart-area"></i>
+            </div>
+            @*<a href="#" class="small-box-footer">
+                    More info <i class="fas fa-arrow-circle-right"></i>
+                </a>*@
+        </div>
+    </div>
+    <!-- ./col -->
+</div>
